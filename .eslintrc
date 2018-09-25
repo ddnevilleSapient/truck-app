@@ -1,0 +1,134 @@
+{
+	"parser": "babel-eslint",
+	"plugins": [
+    "react",
+    "react-native",
+    "jsx-a11y",
+	],
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"experimentalObjectRestSpread": true
+		}
+	},
+	"extends": [
+		"airbnb"
+	],
+	"env": {
+		"es6": true,
+		"browser": true
+	},
+	"rules": {
+		"arrow-body-style": "off",
+		"arrow-parens": "off",
+		"no-plusplus": [
+			"warn",
+			{
+				"allowForLoopAfterthoughts": true
+			}
+		],
+        "no-undef": "off",
+		"indent": [
+			"error",
+			2,
+			{
+				"SwitchCase": 1
+			}
+		],
+		"class-methods-use-this": "off",
+		"comma-dangle": [
+			"error",
+			{
+				"arrays": "always-multiline",
+				"objects": "always-multiline",
+				"imports": "always-multiline",
+				"exports": "always-multiline",
+				"functions": "never"
+			}
+		],
+		"curly": [
+			"error",
+			"multi-line"
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"max-len": "off",
+		"new-cap": [
+			"error"
+		],
+		"no-console": [
+			"warn",
+			{
+				"allow": [
+					"info",
+					"warn",
+					"error"
+				]
+			}
+		],
+		"no-mixed-operators": "off",
+		"no-underscore-dangle": "off",
+		"no-use-before-define": [
+			"off",
+			{
+				"classes": true
+			}
+		],
+		"no-useless-return": "off",
+        "no-useless-escape": "off",
+		"no-tabs": "off",
+		"quotes": [
+			"error",
+			"single"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"spaced-comment": [
+			"error",
+			"always",
+			{
+				"block": {
+					"exceptions": [
+						"*"
+					]
+				}
+			}
+		],
+		"import/extensions": "off",
+		"import/first": "off",
+		"import/newline-after-import": "off",
+		"import/order": [
+			"error"
+		],
+		"import/prefer-default-export": "off",
+		"jsx-a11y/anchor-has-content": "off",
+		"jsx-a11y/label-has-for": "off",
+		"jsx-a11y/no-static-element-interactions": "off",
+		"react/forbid-prop-types": "off",
+		"react/jsx-filename-extension": "off",
+		"react/jsx-indent": "off",
+		"react/jsx-indent-props": [
+			"error",
+			2
+		],
+		"react/jsx-boolean-value": "off",
+		"react/no-unused-prop-types": "off",
+		"react/no-string-refs": "off",
+		"react/no-danger": "off",
+		"react/prefer-stateless-function": "off",
+		"react/style-prop-object": "off",
+		"react/no-multi-comp": "off",
+		"react/jsx-max-props-per-line": [
+				1,
+				{
+						"maximum": 1
+				}
+		]
+	}
+}

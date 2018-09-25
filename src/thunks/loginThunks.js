@@ -1,4 +1,4 @@
-import * as LoginActions from '../actions/loginActions';
+import * as LoginActions from 'actions/loginActions';
 // import parse
 
 const toLogIn = (/* params */) => (dispatch /*, getState */) => {

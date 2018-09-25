@@ -1,5 +1,19 @@
 {
   "presets": ["babel-preset-expo"],
+  "plugins": [
+    "transform-inline-environment-variables",
+    ["module-resolver", {
+      "alias": {
+        "components": "./src/components",
+        "containers": "./src/containers",
+        "actions": "./src/actions",
+        "resources": "./src/resources",
+        "store": "./src/store",
+        "thunks": "./src/thunks",
+        "utils": "./src/utils"
+      }
+    }]
+  ],
   "env": {
     "development": {
       "plugins": ["transform-react-jsx-source"]

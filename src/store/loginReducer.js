@@ -1,4 +1,4 @@
-import LoginTypes from '../actions/types/loginTypes';
+import LoginTypes from 'actions/types/loginTypes';
 
 export default function login(state = {}, action) {
   let newState = {};

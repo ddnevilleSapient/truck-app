@@ -3,7 +3,8 @@ import { Text, View, Button } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
-import * as LoginActions from '../actions/loginActions';
+import * as LoginActions from 'actions/loginActions';
+import copy from 'resources/copy.json';
 
 const styles = {
   headline: {
@@ -18,7 +19,7 @@ class LoginPage extends Component {
   };
 
   state = {
-    world: 'world',
+    world: copy['loginPage.headline.text'],
   };
 
   sendDispatchMessage = () => {
@@ -38,9 +39,9 @@ class LoginPage extends Component {
         </Text>
         <Button
           onPress={this.sendDispatchMessage}
-          title="Dispatch Log In"
+          title={copy['loginPage.button.text']}
           color="#841584"
-          accessibilityLabel="Dispatch Log In"
+          accessibilityLabel={copy['loginPage.button.text']}
         />
       </View>
     );

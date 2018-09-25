@@ -3,10 +3,10 @@
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "eject": "expo eject"
+    "start": "REACT_NATIVE_DEVICE=mobile expo start",
+    "android": "REACT_NATIVE_DEVICE=mobile expo start --android",
+    "ios": "REACT_NATIVE_DEVICE=mobile expo start --ios",
+    "eject": "REACT_NATIVE_DEVICE=mobileexpo eject"
   },
   "dependencies": {
     "expo": "^30.0.1",
@@ -21,6 +21,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",

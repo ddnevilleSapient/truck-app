@@ -1,5 +1,3 @@
-const ActionTypes = {
+export default {
   LOG_IN: 'LOG_IN',
 };
-
-export default ActionTypes;

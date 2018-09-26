@@ -6,7 +6,7 @@
     "start": "REACT_NATIVE_DEVICE=mobile expo start",
     "android": "REACT_NATIVE_DEVICE=mobile expo start --android",
     "ios": "REACT_NATIVE_DEVICE=mobile expo start --ios",
-    "eject": "REACT_NATIVE_DEVICE=mobileexpo eject"
+    "eject": "REACT_NATIVE_DEVICE=mobile expo eject"
   },
   "dependencies": {
     "expo": "^30.0.1",
